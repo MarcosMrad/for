@@ -9,10 +9,17 @@
 
 <?php
 $quantidade =$_POST["quantidade"];
-echo $quantidade;
+$quantidade1=$_POST["quantidade1"];
+echo " linhas $quantidade</br>";
+echo "colunas $quantidade1";
 for($i = 1;$i <= $quantidade; $i++)
 {
-    echo "<Tr><td>$i</td></tr>";
+    echo "<Tr>";
+    for($j = 1;$j <= $quantidade1; $j++)
+    {
+    echo "<td>$j</td>";
+    }
+    "</tr>";
 }
 ?>
 </table>
